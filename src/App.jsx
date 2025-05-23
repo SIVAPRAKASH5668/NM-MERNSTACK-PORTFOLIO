@@ -15,11 +15,12 @@ function App() {
     <>
       <Header />
       <About />
-      <Education />
+      
       <Skills />
       <Experience />
       <Projects />
       <Certifications />
+      <Education />
       <Achievements />
       <Footer />
     </>

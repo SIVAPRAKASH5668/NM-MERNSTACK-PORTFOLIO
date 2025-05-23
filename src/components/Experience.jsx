@@ -2,20 +2,20 @@ import React from "react";
 
 const experiences = [
   {
-    title: "AI Research Intern",
-    company: "ABC Tech Solutions",
+    title: "AI INTERNSHIP",
+    company: "CLOUD ZOO SOFTWARES",
     location: "Coimbatore",
     period: "May 2024 - Present",
     tasks: [
       "Developing machine learning models for predictive analysis",
       "Collaborating on data preprocessing",
-      "Implementing AI algorithms for automation"
+      "Developed Visualization and plotting models from the dataset"
     ]
   },
   {
-    title: "Data Science Intern",
-    company: "XYZ Analytics",
-    location: "Chennai",
+    title: "Data Science Internship",
+    company: "Data Analytics",
+    location: "Coimbatore",
     period: "Dec 2023 - Feb 2024",
     tasks: [
       "Data cleaning and preparation",

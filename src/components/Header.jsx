@@ -9,16 +9,18 @@ const Header = () => (
         <h1 className="name">SIVA PRAKASH S</h1>
         <p className="title">Artificial Intelligence and Data Science Undergraduate</p>
 
-        <div className="contact-info">
-          <div className="contact-item">
-            <i className="fas fa-envelope icon"></i>
-            <span>siva99527@gmail.com</span>
+        <div className="footer-contact-info">
+                <p className="footer-contact-item">
+                  📧 siva99527@gmail.com
+                </p>
+                <p className="footer-contact-item">
+                  📍 Coimbatore, Tamil Nadu
+                </p>
+                <p className="footer-contact-item">
+                  🎓 Anna University Regional Campus
+                </p>
           </div>
-          <div className="contact-item">
-            <i className="fas fa-map-marker-alt icon"></i>
-            <span>Coimbatore, Tamil Nadu, India</span>
-          </div>
-        </div>
+      
       </div>
 
       {/* Navigation links aligned right */}

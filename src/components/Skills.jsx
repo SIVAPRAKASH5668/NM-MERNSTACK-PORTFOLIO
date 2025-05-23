@@ -4,7 +4,6 @@ const skills = {
   "Programming Languages": ["Python", "Java", "JavaScript", "C", "HTML & CSS"],
   Development: ["Backend Development with Flask", "API Integration", "Cloud Solutions", "Database Management"],
   "Artificial Intelligence": ["Machine Learning", "Deep Learning", "NLP", "Computer Vision"],
-  "Problem Solving": ["Data Analysis", "Automation", "Real-time System Optimization", "Critical Thinking"],
 };
 
 const Skills = () => (

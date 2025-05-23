@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
+
   const socialLinks = [
     {
       name: "Email",
@@ -25,89 +25,72 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-content">
-          {/* Main Footer Info */}
-          <div className="footer-main">
-            <div className="footer-brand">
-              <h3 className="footer-name">Siva Prakash S</h3>
-              <p className="footer-title">AI & Data Science Student</p>
-              <p className="footer-description">
-                Passionate about leveraging technology to solve real-world problems. 
-                Always eager to learn and contribute to innovative projects.
+      <div className="footer-container container">
+        <div className="footer-content grid">
+
+          <div className="footer-brand">
+            <h3 className="footer-name">Siva Prakash S</h3>
+            <p className="footer-title">AI & Data Science Student</p>
+            <blockquote className="footer-quote">
+              <p>
+                “My journey into AI and Data Science began with one simple idea: technology should empower and uplift people. Every project I build is a step toward solving real-world problems and creating meaningful impact.”
               </p>
-            </div>
-            
-            {/* Quick Links */}
-            <div className="footer-links">
-              <h4 className="footer-section-title">Quick Links</h4>
-              <ul className="footer-nav">
-                {quickLinks.map((link, index) => (
-                  <li key={index}>
-                    <a 
-                      href={link.href} 
-                      className="footer-link"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        document.getElementById(link.href.substring(1))?.scrollIntoView({
-                          behavior: 'smooth'
-                        });
-                      }}
-                    >
-                      {link.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            
-            {/* Contact Info */}
-            <div className="footer-contact">
-              <h4 className="footer-section-title">Get In Touch</h4>
-              <div className="footer-contact-info">
-                <p className="footer-contact-item">
-                  📧 siva99527@gmail.com
-                </p>
-                <p className="footer-contact-item">
-                  📍 Coimbatore, Tamil Nadu
-                </p>
-                <p className="footer-contact-item">
-                  🎓 Anna University Regional Campus
-                </p>
-              </div>
-              
-              {/* Social Links */}
-              <div className="footer-social">
-                {socialLinks.map((social, index) => (
-                  <a
-                    key={index}
-                    href={social.url}
-                    target={social.url.startsWith('http') ? '_blank' : '_self'}
-                    rel={social.url.startsWith('http') ? 'noopener noreferrer' : ''}
-                    className="footer-social-link"
-                    title={social.name}
+              <cite>— Siva Prakash S</cite>
+            </blockquote>
+          </div>
+
+          <div className="footer-links">
+            <h4 className="footer-section-title">Quick Links</h4>
+            <ul className="footer-nav">
+              {quickLinks.map((link, index) => (
+                <li key={index}>
+                  <a 
+                    href={link.href} 
+                    className="footer-link"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document.getElementById(link.href.substring(1))?.scrollIntoView({
+                        behavior: 'smooth'
+                      });
+                    }}
                   >
-                    {social.icon}
+                    {link.name}
                   </a>
-                ))}
-              </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="footer-contact">
+            <h4 className="footer-section-title">Get Connected</h4>
+            <form className="login-form">
+              <input type="email" placeholder="Email" required />
+              <input type="password" placeholder="Password" required />
+              <button type="submit">Login</button>
+            </form>
+            <div className="footer-social">
+              {socialLinks.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.url}
+                  target={social.url.startsWith('http') ? '_blank' : '_self'}
+                  rel={social.url.startsWith('http') ? 'noopener noreferrer' : ''}
+                  className="footer-social-link"
+                  title={social.name}
+                >
+                  {social.icon}
+                </a>
+              ))}
             </div>
           </div>
+
         </div>
-        
-        {/* Footer Bottom */}
+
         <div className="footer-bottom">
-          <div className="footer-bottom-content">
-            <p className="footer-copyright">
-              © {currentYear} Siva Prakash S. All rights reserved.
-            </p>
-            <p className="footer-note">
-              Built with ❤️ using React.js
-            </p>
-          </div>
+          <p>© {currentYear} Siva Prakash S. All rights reserved.</p>
+          <p>Built with ❤️ using React.js</p>
         </div>
-        
-        {/* Back to Top Button */}
+
         <button
           onClick={() => {
             document.getElementById('about')?.scrollIntoView({
